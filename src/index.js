@@ -7,7 +7,7 @@ function getTheNumber (theNumber, decision = '', startNumber = 1) {
     }; 
 
     if (startNumber === theNumber) {
-        return `${theNumber} = ${decision}`;
+        return `'${theNumber}' = ${decision}`;
     };
     
     if (startNumber < theNumber) {
