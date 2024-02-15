@@ -11,8 +11,8 @@ function getTheNumber (theNumber, decision = '', startNumber = 1) {
     };
     
     if (startNumber < theNumber) {
-        const variant1 = getTheNumber(theNumber, `(${decision}${startNumber} + 5)`, startNumber + 5);
-        const variant2 = getTheNumber(theNumber, `(${decision}${startNumber} * 3)`, startNumber * 3);    
+        const variant1 = getTheNumber(theNumber, `(${decision} + 5)`, startNumber + 5);
+        const variant2 = getTheNumber(theNumber, `(${decision} * 3)`, startNumber * 3);    
         return variant1 || variant2;
     };
 
